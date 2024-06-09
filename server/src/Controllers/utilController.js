@@ -3,16 +3,16 @@ const mailer = require('nodemailer');
 const transporter = mailer.createTransport({
     service: "Gmail",
     auth: {
-        user: "unitedwarrantyservice@gmail.com",
-        pass: "apbdyphscfdlksih",
+        user: "",
+        pass: "",
     }
 });
 
-const sendEmail = async (addresses = ["kimdanny0603@gmail.com"], subject, body, attachments = []) => {
+const sendEmail = async (addresses = [""], subject, body, attachments = []) => {
     try {
         const email = {
             from: "United Web Service",
-            to: process.env.MODE === "DEV" ? "kimdanny0603@gmail.com" : addresses,
+            to: process.env.MODE === "DEV" ? "" : addresses,
             subject: subject,
             html: body,
             attachments

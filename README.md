@@ -28,7 +28,9 @@ The server-side is built with Node.js and Express, providing a robust API for th
 
 Create a `.env` file in the `client` directory with the following variables:
 
+```plaintext
 API=/api
+```
 
 - `API`: The URL for your api.
 
@@ -36,10 +38,12 @@ API=/api
 
 Create a `.env` file in the `server` directory with the following variables:
 
+```plaintext
 URL=http://localhost:3000
 MONGO_URI=mongodb://localhost:27017/auth_template
 MODE=DEV
 TOKEN_SECRET=token
+```
 
 - `URL`: URL for emails being sent
 - `MONGO_URI`: The URI for connecting to your MongoDB database.
@@ -50,7 +54,9 @@ TOKEN_SECRET=token
 
 To enable the client to communicate with the server without CORS issues, you need to set up a proxy in the `client/package.json` file. Add the following line to the `package.json` file:
 
+```json
 "proxy": "http://localhost:3001"
+```
 
 This configuration ensures that API requests from the client are proxied to the server, allowing seamless communication between the front end and back end.
 
@@ -65,14 +71,18 @@ This configuration ensures that API requests from the client are proxied to the 
 
 1. Clone the repository:
 
+```plaintext
     git clone https://github.com/dantewins/mui-auth-template.git
+```
 
 2. Install dependencies for both client and server:
 
+```plaintext
     cd mui-auth-template/client
     npm install
     cd ../server
     npm install
+```
 
 3. Set up your `.env` files as described above.
 
@@ -80,13 +90,17 @@ This configuration ensures that API requests from the client are proxied to the 
 
 1. Start the server:
 
+```plaintext
     cd server
     npm run server
+```
 
 2. Start the client:
 
+```plaintext
     cd client
     npm run start
+```
 
 Your application should now be running with the client available at `http://localhost:3000` and the server at `http://localhost:3001`.
 

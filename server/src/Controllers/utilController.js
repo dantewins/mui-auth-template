@@ -11,7 +11,7 @@ const transporter = mailer.createTransport({
 const sendEmail = async (addresses = [""], subject, body, attachments = []) => {
     try {
         const email = {
-            from: "United Web Service",
+            from: "",
             to: process.env.MODE === "DEV" ? "" : addresses,
             subject: subject,
             html: body,

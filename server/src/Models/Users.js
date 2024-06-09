@@ -25,17 +25,6 @@ module.exports = model("users", new Schema({
         type: String,
         required: true
     },
-    address1: String,
-    address2: String,
-    city: String,
-    state: String,
-    zipCode: String,
-    businessName: String,
-    shippingAddress1: String,
-    shippingAddress2: String,
-    shippingCity: String,
-    shippingState: String,
-    shippingZipCode: String,
     verified: {
         type: Boolean,
         default: false

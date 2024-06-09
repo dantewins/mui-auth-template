@@ -1,0 +1,5 @@
+20240609	18:16:38	d2d67ecc-76f6-4491-834e-fa97fd3a6262	GET	/main.5414510c16d6ea3f7eb7.hot-update.json	undefined
+20240609	18:16:38	87d10080-d23e-4149-9ba1-91d9176b06c0	GET	/api/auth/currentUser	undefined
+20240609	18:16:38	5eca1a7b-b2c6-44c9-8f26-ae5e19770840	POST	/api/auth/login	http://localhost:3001/
+20240609	18:16:38	fe0fd844-8a45-452e-ad1e-70e93323db5d	GET	/api/auth/currentUser	undefined
+20240609	18:16:42	83efb17d-dc2d-46b2-87ed-0b43c2a20931	POST	/api/auth/login	http://localhost:3001/

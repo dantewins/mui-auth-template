@@ -65,7 +65,7 @@ This configuration ensures that API requests from the client are proxied to the 
 
 1. Clone the repository:
 
-    git clone https://github.com/yourusername/mui-auth-template.git
+    git clone https://github.com/dantewins/mui-auth-template.git
 
 2. Install dependencies for both client and server:
 
